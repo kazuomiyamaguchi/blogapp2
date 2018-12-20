@@ -1,0 +1,30 @@
+<div class="contents">
+  <div class="row">
+    <div class="row">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="input-field col s12">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+
+        <div class="input-field col s12">
+          <%= f.label :password %>
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+
+        <div class="input-field col s12">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        </div>
+
+        <div class="col10 push1">
+          <%= f.submit "Sign up"  ,class: "waves-effect waves-light btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= render "devise/shared/links" %>
