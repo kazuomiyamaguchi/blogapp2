@@ -1,4 +1,12 @@
+.nav-wrapper {
+  padding: 0px 30px;
+}
+
 .contents {
   max-width: 980px;
-  margin: 0px auto;
+  margin: 50px auto;
+}
+
+.card-panel {
+  margin: 30px;
 }

@@ -1,0 +1,16 @@
+
+<div class="contents">
+  <%= form_for(@blog) do |f| %>
+    <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_field :text , id: "textarea1", class: "materialize-textarea" %>
+          <label for="textarea1">ブログ投稿</label>
+        </div>
+        <div class="col10 push1">
+          <%= f.submit class: "waves-effect waves-light btn" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
